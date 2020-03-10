@@ -70,6 +70,7 @@ describe("basic allowed moves", () => {
         const allowedMoves = getAllowedMoves(game);
         chai.assert.sameMembers(allowedMoves, ['left', 'right', 'down']);
     });
+    
     it("can get basic allowed moves", () => {
         const game: Game = {
             "game": {
