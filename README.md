@@ -10,11 +10,11 @@ Edit the top of dev.sh and replace STACK_NAME with a name that describes the pro
 
 These are the commands you can use...
 
-./dev.sh build foo -- compile only the lambda function foo
-./dev.sh deploy -- deploy the entire CloudFormation stack including all source code to the currently configured aws cli account.
-./dev.sh upload foo -- only replace the the code for the lambda function foo.
-./dev.sh invoke foo bar.json -- invoke and test the already deployed function foo with the input file bar.json.
-./dev.sh delete -- delete the entire CloudFormation stack and all resources.
+    ./dev.sh build foo -- compile only the lambda function foo
+    ./dev.sh deploy -- deploy the entire CloudFormation stack including all source code to the currently configured aws cli account.
+    ./dev.sh upload foo -- only replace the the code for the lambda function foo.
+    ./dev.sh invoke foo bar.json -- invoke and test the already deployed function foo with the input file bar.json.
+    ./dev.sh delete -- delete the entire CloudFormation stack and all resources.
 
 ## Linting
 
