@@ -1,6 +1,7 @@
-# sam-scaffold TypeScript
+# Based off of: sam-scaffold TypeScript
+https://github.com/Giftbit/sam-scaffold
 
-Included are two example lambda functions: `helloWorld` which does all the incredible things you expect from that name, and `robots` which implements a simple CRUD REST API using [Cassava](https://github.com/Giftbit/cassava/).
+Implements a simple CRUD REST API using [Cassava](https://github.com/Giftbit/cassava/).
 
 ## Linting
 

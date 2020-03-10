@@ -1,7 +1,8 @@
 import {Game} from "../model/battlesnake-official/Game";
-import {getAllowedMoves} from "./basicSnake";
+import {getAllowedMoves} from "./allowedMoves";
+import * as chai from "chai";
 
-describe.only("basic allowed moves", () => {
+describe("basic allowed moves", () => {
     it("can get basic allowed moves", () => {
         const game: Game = {
             "game": {
@@ -67,7 +68,7 @@ describe.only("basic allowed moves", () => {
         };
 
         const allowedMoves = getAllowedMoves(game);
-        console.log(allowedMoves);
+        chai.assert.sameMembers(allowedMoves, ['left', 'right', 'down']);
     });
     it("can get basic allowed moves", () => {
         const game: Game = {
@@ -130,7 +131,7 @@ describe.only("basic allowed moves", () => {
         };
 
         const allowedMoves = getAllowedMoves(game);
-        console.log(allowedMoves);
+        chai.assert.sameMembers(allowedMoves, ['up', 'down']);
     });
 
 });

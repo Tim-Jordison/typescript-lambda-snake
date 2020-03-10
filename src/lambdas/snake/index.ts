@@ -1,6 +1,6 @@
 import * as cassava from "cassava";
 import {Game} from "./model/battlesnake-official/Game";
-import {getAllowedMoves} from "./behaviors/basicSnake";
+import {getAllowedMoves} from "./utils/allowedMoves";
 
 export const router = new cassava.Router();
 

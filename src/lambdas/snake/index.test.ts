@@ -51,7 +51,6 @@ describe("/move", () => {
             body: JSON.stringify(game)
         }));
         chai.assert.equal(res.statusCode, 200);
-        console.log(res.body)
     });
 
 });
