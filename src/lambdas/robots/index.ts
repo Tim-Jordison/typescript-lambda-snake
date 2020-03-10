@@ -8,7 +8,7 @@ interface Robot {
 /**
  * A Database of movie robots.
  */
-const robots: {[id: string]: Robot} = {
+const robots: { [id: string]: Robot } = {
     robby: {
         name: "Robby",
         film: "Forbidden Planet"
@@ -29,7 +29,7 @@ router.route("/robots")
     .handler(evt => {
         return {
             body: Object.keys(robots).map(key => robots[key])
-        }
+        };
     });
 
 router.route("/robots/{robot}")
@@ -66,7 +66,7 @@ router.route("/robots/{robot}")
         return {
             statusCode: cassava.httpStatusCode.success.NO_CONTENT,
             body: null
-        }
+        };
     });
 
 router.route("/robots/{robot}")
@@ -81,7 +81,7 @@ router.route("/robots/{robot}")
         return {
             statusCode: cassava.httpStatusCode.success.NO_CONTENT,
             body: null
-        }
+        };
     });
 
 /**
