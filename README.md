@@ -1,5 +1,5 @@
-# Based off of: sam-scaffold TypeScript
-https://github.com/Giftbit/sam-scaffold
+# Typescript Lambda Snake
+Based off of https://github.com/Giftbit/sam-scaffold
 
 Implements a simple CRUD REST API using [Cassava](https://github.com/Giftbit/cassava/).
 
